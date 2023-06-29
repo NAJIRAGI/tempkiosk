@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 온도 표시</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 30px;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 450px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            color: #333333;
+            margin-bottom: 25px;
+        }
+        .temperature {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            margin-bottom: 15px;
+        }
+        .temp-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>실시간 온도 표시</h1>
+        <div class="temperature">
+            <label for="temp1">온도1:</label>
+            <span id="temp1" class="temp-value">0℃</span>
+        </div>
+        <div class="temperature">
+            <label for="temp2">온도2:</label>
+            <span id="temp2" class="temp-value">0℃</span>
+        </div>
+        <div class="temperature">
+            <label for="temp3">온도3:</label>
+            <span id="temp3" class="temp-value">0℃</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
